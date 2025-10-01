@@ -22,6 +22,7 @@ public class Test {
 
         new Actions(driver).pause(Duration.ofSeconds(1)).perform();
         WebElement number= driver.findElement(By.cssSelector("input[id='age']"));
+
         number.sendKeys("1222");
         number.sendKeys(Keys.TAB);
         new Actions(driver).pause(Duration.ofSeconds(1)).perform();
